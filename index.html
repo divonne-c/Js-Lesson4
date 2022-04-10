@@ -2,9 +2,81 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
     <title>Tech It Easy Dashboard</title>
 </head>
 <body>
 
+<div class="dashboard">
+    <!--------------Left Content---------------->
+    <div class="content-left">
+
+        <!--------Logo--------->
+        <img src="./assets/tech_it_easy.png" alt="">
+
+        <!--------Brands--------->
+        <div class="tv-brands">
+            <h3>Brands: </h3>
+            <div class="product-brands"></div>
+        </div>
+    </div>
+
+    <!--------------Right Content---------------->
+    <div class="content-right">
+
+        <!--------------Header---------------->
+        <header>
+            <h1>Financial Dashboard</h1>
+            <p>Tech it quick, tech it easy</p>
+        </header>
+
+        <!--------------Main---------------->
+        <main>
+            <!--------Statistics--------->
+            <div class="statistics">
+                <!--Total sold-->
+                <div class="container">
+                    <h3>Total sold: </h3>
+                    <p class="total-sold">0</p>
+                </div>
+                <!--Total stock -->
+                <div class="container">
+                    <h3>Total stock: </h3>
+                    <p class="total-stock">0</p>
+                </div>
+                <!--Total to sell -->
+                <div class="container">
+                    <h3>Amount to sell: </h3>
+                    <p class="total-to-sell">0</p>
+                </div>
+            </div>
+
+
+            <div class="container column hidden">
+                <h3>Tv info: </h3>
+                <div class="tv-info"></div>
+            </div>
+
+            <!--------Inventory--------->
+            <div class="inventory-container">
+
+                <!--Buttons-->
+                <div class="buttons">
+                    <button class="all-products-btn">All products</button>
+                    <button class="sort-btn">Sort price</button>
+                    <button class="ambilight-btn">Ambilight tv's</button>
+                    <button class="sold-out-btn">sold out</button>
+                </div>
+
+                <!--Inventory content-->
+                <div class="inventory-content">
+                    <div class="inventory"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+
+<script src="main.js"></script>
 </body>
 </html>
