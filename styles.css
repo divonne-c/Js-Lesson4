@@ -1,0 +1,156 @@
+/* TABLE OF CONTENT */
+/* ==||    1. GLOBAL STYLES     ||== */
+/* ==||    2. TYPOGRAPHY        ||== */
+/* ==||    3. LAYOUT            ||== */
+/* ==||    4. OBJECTS           ||== */
+/* ==||    5. COMPONENTS        ||== */
+/* ==||    6. MEDIA QUERIES     ||== */
+
+/* ==========||        1. GLOBAL STYLES         ||========== */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Montserrat:wght@100;200;400&display=swap');
+
+:root {
+    --text-color: #4b4a4a;
+    --bg-color: aliceblue;
+    --secondary-bg-color: orange;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    line-height: 1.4;
+    color: var(--text-color);
+}
+
+/* ==========||        2. TYPOGRAPHY         ||========== */
+h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+    font-size: 1.2em;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 1em;
+}
+
+p {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+
+.statistics p {
+    font-size: 3em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ==========||        3. LAYOUT        ||========== */
+.dashboard {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-gap: 2em;
+    height: 100%;
+}
+
+.content-right, .content-left {
+    padding: 2em;
+}
+
+.content-left, .content-right, main {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.hidden {
+    display: none;
+}
+
+/* ==========||        4. AREAS        ||========== */
+/*--------- 4.1 Left Content ---------*/
+.content-left {
+    align-items: center;
+    background: var(--bg-color);
+}
+
+.content-left img {
+    width: 100px;
+}
+
+/*--------- 4.2 Right Content ---------*/
+
+/*--------- 4.2.a Main ---------*/
+/* Statistics */
+.statistics {
+    display: flex;
+    gap: 2em;
+}
+
+.statistics .container {
+    background: var(--bg-color);
+    padding: 2em;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.total-sold {
+    color: #7ca47c;
+}
+
+.total-stock {
+    color: #7878a9;
+}
+
+.total-to-sell {
+    color: #c56161;
+}
+
+/* Inventory */
+.buttons {
+    display: flex;
+    gap: 1em;
+}
+
+.buttons button {
+    border: none;
+    padding: 1em;
+    border-radius: 5px;
+    background: var(--secondary-bg-color);
+    color: var(--text-color);
+    text-transform: capitalize;
+}
+
+.buttons button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.inventory-content {
+    margin-top: 2em;
+}
+
+.inventory {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.inventory .inventory-style {
+    background: #f4f4f4;
+    padding: 1em;
+    border-radius: 12px;
+}
+
+.inventory-style {
+    font-family: 'Montserrat', sans-serif;
+    white-space: pre;
+    display: flex;
+    flex-direction: column;
+}
